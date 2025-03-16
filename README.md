@@ -4,6 +4,7 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 
 <!-- [🔗 AmoreSearch 웹서비스](http://15.165.170.3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [📽️ 시연 영상]() -->
 
+<br/>
 
 ## 1. 프로젝트 개요
 ### 📅 작업 기간
@@ -119,6 +120,8 @@ pnpm run dev
 cd backend/app
 uvicorn main:app --reload
 ```
+
+<br/>
 
 ## 2. 프로젝트 소개
 ### 🚀 주요 기능
