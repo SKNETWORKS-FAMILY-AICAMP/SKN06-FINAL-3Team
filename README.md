@@ -26,7 +26,7 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 - **프론트엔드**: `Nuxt.js` → NuxtImg, Vuetify, ...
 - **백엔드**: `FastAPI` → Langchain, Chromadb, PyMySQL, Pydantic, PyJWT, bcrypt ...
 - **데이터베이스**: `MariaDB`, `ChromaDB`
-- **LLM, Embedding 모델**: `RunPod` <br/> → llm - 미정 / 임베딩 - multilingual-e5-large
+- **LLM, Embedding 모델**: `RunPod`  → llm - 미정 / 임베딩 - multilingual-e5-large
 - **서버 인프라**: `AWS EC2`, `S3`
 
 <br/>
@@ -139,7 +139,8 @@ uvicorn main:app --reload
 <br/>
 
 ### 🏰️ 시스템 아키텍처 구조 
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png"/>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png"/>
+
 
 - CI/CD: Github Actions
 - EC2 인스턴스 1: 프론트엔드(Nuxt.js), 백엔드(FastAPI), MariaDB 배포
@@ -149,5 +150,13 @@ uvicorn main:app --reload
 
 <br/>
 
+### 📱 UI
+
+
+### 💾 데이터 ERD
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20ERD.png"/>
+
+
 ### 📊 데이터 및 LLM 모델
-- 
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UI.png"/>
+
