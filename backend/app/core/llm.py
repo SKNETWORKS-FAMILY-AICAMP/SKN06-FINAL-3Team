@@ -39,7 +39,7 @@ collections = {
     "brand": client.get_collection(COLLECTION_NAME_BRAND),
     "cosmetic": client.get_collection(COLLECTION_NAME_COSMETIC),
     "ingredient": client.get_collection(COLLECTION_NAME_INGREDIENT),
-    # "law": client.get_collection(COLLECTION_NAME_LAW),
+    # "law": client.get_collection(COLLECTION_NAME_LAW),  # 일단 법률 쪽은 collection 안만듦! 추후 고도화 예정
 }
 
 classification_prompt = PromptTemplate(
@@ -224,6 +224,6 @@ class IntegrationSearch:
     async def search(question: str):
         response = agentic_rag_chain(question)
 
-        for chunk in response.split(" "):  # 🔹 단어 단위 스트리밍 전송
+        for chunk in response.split(" "):
             yield chunk + " "
             await asyncio.sleep(0.1)
