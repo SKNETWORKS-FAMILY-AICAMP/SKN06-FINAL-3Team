@@ -151,12 +151,8 @@ uvicorn main:app --reload
 <br/>
 
 ### 📱 UI
-
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UXUI.png"/>
 
 ### 💾 데이터 ERD
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20ERD.png"/>
-
-
-### 📊 데이터 및 LLM 모델
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UXUI.png"/>
 
