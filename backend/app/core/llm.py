@@ -113,8 +113,6 @@ def multi_collection_retriever(input_data: str) -> str:
     retrieved_docs = {} 
     query_embedding = embedding_function.embed_query(query)
 
-    print(f"검색할 카테고리: {category}")
-
     search_collections = []
     metadata_filter = None 
 
@@ -132,9 +130,6 @@ def multi_collection_retriever(input_data: str) -> str:
         search_collections = ["brand", "posts"]
     elif category == "news":
         search_collections = ["posts"]
-
-    print(f"검색할 컬렉션: {search_collections}")
-    print(f"적용할 메타데이터 필터: {metadata_filter}")
 
     for collection_name in search_collections:
         if metadata_filter:
