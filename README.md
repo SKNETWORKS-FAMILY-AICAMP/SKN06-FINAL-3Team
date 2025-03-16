@@ -13,10 +13,10 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 ### 👥 개발자
 | 역할 | 이름 | GitHub | 담당 업무 |
 |------|------|--------|----------|
-| 팀원 | 박서윤 | [GitHub](https://github.com/Se0y00n) | |
-| 팀원 | 박유나 | [GitHub](https://github.com/yunazz) | |
-| 팀장 | 유경상 | [GitHub](https://github.com/kyungsangYu) |  |
-| 팀원 | 장예린 | [GitHub](https://github.com/yerin7797) |  |
+| 팀원 | 박서윤 | [Se0y00n](https://github.com/Se0y00n) | |
+| 팀원 | 박유나 | [yunazz](https://github.com/yunazz) | |
+| 팀장 | 유경상 | [kyungsangYu](https://github.com/kyungsangYu) |  |
+| 팀원 | 장예린 | [yerin7797](https://github.com/yerin7797) |  |
 
 ### 🛠️ 기술스텍 및 라이브러리
 - **프론트엔드**: `Nuxt.js` → NuxtImg, Vuetify, ...
@@ -108,13 +108,13 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 </details> 
 
 ### 🔃 실행 방법
-**FE 실행**
+- **FE 실행**
 ```bash
 cd frontend
 pnpm install
 pnpm run dev
 ```
-**BE 실행**
+- **BE 실행**
 ```bash
 cd backend/app
 uvicorn main:app --reload
@@ -140,10 +140,3 @@ uvicorn main:app --reload
 
 ### 📊 데이터 및 LLM 모델
 - 
-
-## 3. 프로젝트 리뷰
-
-- **박서윤**:
-- **박유나**:
-- **유경상**:  
-- **장예린**:
