@@ -6,8 +6,9 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 
 
 ## 1. 프로젝트 개요
-### 📅 프로젝트 기간
+### 📅 작업 기간
 2025.01.21 ~ 2025.03.20 
+
 
 ### 👥 개발자
 | 역할 | 이름 | GitHub | 담당 업무 |
@@ -107,16 +108,16 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 </details> 
 
 ### 🔃 실행 방법
-1. **백업 실행**
-```bash
-cd backend
-uvicorn main:app --reload
-```
-2. **프론트엔드 실행**
+**FE 실행**
 ```bash
 cd frontend
 pnpm install
 pnpm run dev
+```
+**BE 실행**
+```bash
+cd backend/app
+uvicorn main:app --reload
 ```
 
 ## 2. 프로젝트 소개
@@ -128,7 +129,7 @@ pnpm run dev
 - 업계 최신뉴스 및 저널 모아보기 
 
 ### 🏰️ 시스템 아키텍처 구조 
-<img src="./documents/[AmoreSearch] 시스템아키텍처.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png"/>
 
 - CI/CD: Github Actions
 - EC2 인스턴스 1: 프론트엔드(Nuxt.js), 백엔드(FastAPI), MariaDB 배포
@@ -137,11 +138,11 @@ pnpm run dev
 - AWS S3: 데이터 저장 및 관리
 
 
-
 ### 📊 데이터 및 LLM 모델
 - 
 
-### 📌 프로젝트 회고
+## 3. 프로젝트 리뷰
+
 - **박서윤**:
 - **박유나**:
 - **유경상**:  
