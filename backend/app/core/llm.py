@@ -89,7 +89,6 @@ classification_prompt = PromptTemplate(
 
     반드시 위의 카테고리 중 하나만 출력하세요.
     
-    자사 
     카테고리:""",
     input_variables=["question"],
 )
