@@ -7,13 +7,11 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 <br/>
 
 ## 1. 프로젝트 개요
-
-<h3> 📅 작업 기간</h3>
-
+### 📅 작업 기간
 2025.01.21 ~ 2025.03.20 
 
-<h3 style="margin-top:40px">👥 개발자</h3>
 
+### 👥 개발자
 | 역할 | 이름 | GitHub | 담당 업무 |
 |------|------|--------|----------|
 | 팀원 | 박서윤 | [Se0y00n](https://github.com/Se0y00n) | |
@@ -21,16 +19,15 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 | 팀장 | 유경상 | [kyungsangYu](https://github.com/kyungsangYu) |  |
 | 팀원 | 장예린 | [yerin7797](https://github.com/yerin7797) |  |
 
-<h3 style="margin-top:40px">🛠️ 기술스텍 및 라이브러리</h3>
-
+### 🛠️ 기술스텍 및 라이브러리
 - **프론트엔드**: `Nuxt.js` → NuxtImg, Vuetify, ...
 - **백엔드**: `FastAPI` → Langchain, Chromadb, PyMySQL, Pydantic, PyJWT, bcrypt ...
 - **데이터베이스**: `MariaDB`, `ChromaDB`
 - **LLM, Embedding 모델**: `RunPod` <br/> → llm - 미정 / 임베딩 - multilingual-e5-large
 - **서버 인프라**: `AWS EC2`, `S3`
 
-<h3 style="margin-top:40px">🗂️ 디렉토리 구조</h3>
 
+### 🗂️ 디렉토리 구조
 <details> <summary>자세히 보기</summary>
 
 ```bash
@@ -111,8 +108,7 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 ```
 </details> 
 
-<h3 style="margin-top:40px">🔃 실행 방법</h3>
-
+### 🔃 실행 방법
 - **FE 실행**
 ```bash
 cd frontend
@@ -128,17 +124,14 @@ uvicorn main:app --reload
 <br/>
 
 ## 2. 프로젝트 소개
-
-<h3 style="margin-top:40px">🚀 주요 기능</h3>
-
+### 🚀 주요 기능
 - AI 검색
 - 회사소식, 사내문서 조회 및 검색
 - 화장품 조회 및 검색
 - 직원관리
 - 업계 최신뉴스 및 저널 모아보기 
 
-<h3 style="margin-top:40px">🏰️ 시스템 아키텍처 구조 </h3>
-
+### 🏰️ 시스템 아키텍처 구조 
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png"/>
 
 - CI/CD: Github Actions
@@ -148,5 +141,5 @@ uvicorn main:app --reload
 - AWS S3: 데이터 저장 및 관리
 
 
-<h3 style="margin-top:40px">📊 데이터 및 LLM 모델</h3>
+### 📊 데이터 및 LLM 모델
 - 
