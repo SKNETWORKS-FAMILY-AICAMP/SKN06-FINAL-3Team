@@ -2,7 +2,7 @@ import os
 import asyncio
 import chromadb
 import json
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.agents import AgentType, initialize_agent
 from langchain.tools import tool
 from langchain.schema import SystemMessage
