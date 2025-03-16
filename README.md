@@ -62,8 +62,7 @@
 
 ## 🏰️ 시스템 아키텍처 구조 
 
-![시스템 아키텍처](./documents/[AmoreSearch] 시스템아키텍처.png)
-
+<img src="./documents/[AmoreSearch] 시스템아키텍처.png">
 - CI/CD: Github Actions
 - EC2 인스턴스 1: 프론트엔드(Nuxt.js), 백엔드(FastAPI), MariaDB 배포
 - EC2 인스턴스 2: 벡터 스토어(ChromaDB) 배포 및 관리
