@@ -169,3 +169,72 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+@ -0,0 +1,64 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Node Modules 및 pnpm 캐시 폴더
+node_modules/
+.pnp/
+.pnp.js
+.pnpm-store/
+
+# 빌드 출력 (출력된 정적 파일 포함)
+.nuxt/
+.output/
+
+# 환경 변수 파일
+.env
+.env.local
+.env.*.local
+
+# 로그 및 디버깅 파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS 관련 파일 (Mac / Windows)
+.DS_Store
+Thumbs.db
+
+# Editor 설정 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript 빌드 출력
+*.tsbuildinfo
+
+# Local Nuxt Dev 환경 관련
+.nuxt/
+node_modules/
+.cache/
+output.log
+
+/backend/app/core/multilingual-e5-large
+/frontend/node_modules
