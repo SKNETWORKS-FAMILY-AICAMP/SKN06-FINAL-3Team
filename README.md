@@ -158,5 +158,5 @@ uvicorn main:app --reload
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20ERD.png"/>
 
 - Vector Store - ChromaDB
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20vectore_store_collections.png"/>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20vector_store_collections.png"/>
 
