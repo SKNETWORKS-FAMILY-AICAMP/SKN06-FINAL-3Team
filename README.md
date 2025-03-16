@@ -158,4 +158,5 @@ uvicorn main:app --reload
 
 
 ### 📊 데이터 및 LLM 모델
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UI.png"/>
 
