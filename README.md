@@ -1,4 +1,4 @@
-# 🏆 AmoreSearch
+# 🔎 AmoreSearch
 > **한 줄 소개**  
 > 프로젝트의 목적과 해결하려는 문제를 간단하게 요약  
 
@@ -8,10 +8,10 @@
 ## 👥 팀원 소개
 | 역할 | 이름 | GitHub | 담당 업무 |
 |------|------|--------|----------|
-| 팀원 | 박서윤 | [GitHub](https://github.com/) | |
+| 팀원 | 박서윤 | [GitHub](https://github.com/Se0y00n) | |
 | 팀원 | 박유나 | [GitHub](https://github.com/yunazz) | |
-| 팀장 | 유경상 | [GitHub](https://github.com/) |  |
-| 팀원 | 장예린 | [GitHub](https://github.com/) |  |
+| 팀장 | 유경상 | [GitHub](https://github.com/kyungsangYu) |  |
+| 팀원 | 장예린 | [GitHub](https://github.com/yerin7797) |  |
 
 ## 📚 프로젝트 개요
 - **목적**: 
