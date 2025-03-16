@@ -80,9 +80,9 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 │   ├── nuxt.config.ts
 │   ├── package.json
 │
-├── 📂 backend         # 백엔드 (FastAPI)
+├── 📂 backend             # 백엔드 (FastAPI)
 │   ├── 📂 app
-│   │   ├── 📂 core
+│   │   ├── 📂 core          # 핵심 로직 (LLM, 벡터스토어 관리, 보안관리 등)
 │   │   │   ├── llm.py
 │   │   │   ├── security.py
 │   │   │   ├── vectorstore.ipynb
@@ -105,7 +105,6 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 │   ├── requirements.txt
 ```
 </details> 
-
 
 ### 🔃 실행 방법
 1. **백업 실행**
