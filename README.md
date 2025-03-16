@@ -83,8 +83,7 @@
 │   │   ├── 📂 core
 │   │   │   ├── llm.py
 │   │   │   ├── security.py
-│   │   │   ├── vectorstore.ipynb
-│   │   │   ├── 📂 multilingual-e5-large
+│   │   │   ├── 📂 multilingual-e5-large     # 임베딩 모델 토크나이저
 │   │   ├── 📂 db
 │   │   │   ├── connection.py
 │   │   │   ├── session.py
