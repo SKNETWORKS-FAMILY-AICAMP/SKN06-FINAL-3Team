@@ -153,6 +153,10 @@ uvicorn main:app --reload
 ### 📱 UI
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UXUI.png"/>
 
-### 💾 데이터 ERD
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20ERD.png"/>
+### 💾 데이터베이스
+- RDB - MariaDB
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20ERD.png"/>
+
+- Vector Store - ChromaDB
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20vectore_store_collections.png"/>
 
