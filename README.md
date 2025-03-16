@@ -9,7 +9,7 @@
 | 역할 | 이름 | GitHub | 담당 업무 |
 |------|------|--------|----------|
 | 팀원 | 박서윤 | [GitHub](https://github.com/) | |
-| 팀원 | 박유나 | [GitHub](https://github.com/) | |
+| 팀원 | 박유나 | [GitHub](https://github.com/yunazz) | |
 | 팀장 | 유경상 | [GitHub](https://github.com/) |  |
 | 팀원 | 장예린 | [GitHub](https://github.com/) |  |
 
