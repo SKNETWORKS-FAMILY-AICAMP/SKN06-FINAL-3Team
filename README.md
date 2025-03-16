@@ -62,7 +62,8 @@
 
 ## 🏰️ 시스템 아키텍처 구조 
 
-<img src="./documents/[AmoreSearch] 시스템아키텍처.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png">
+
 - CI/CD: Github Actions
 - EC2 인스턴스 1: 프론트엔드(Nuxt.js), 백엔드(FastAPI), MariaDB 배포
 - EC2 인스턴스 2: 벡터 스토어(ChromaDB) 배포 및 관리
