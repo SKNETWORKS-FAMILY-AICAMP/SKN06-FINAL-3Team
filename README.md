@@ -151,19 +151,10 @@ uvicorn main:app --reload
 <br/>
 
 ### 📱 UI
-<!-- <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UXUI.png"/> -->
-<p>
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/login.mp4" width="50%"/>
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/mypage.mp4" width="50%"/>
-</p>
-<p>
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/amorestory.mp4" width="50%"/>
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/news.mp4" width="50%"/>
-</p>
-<p>
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/cometic.mp4" width="50%"/>
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/member.mp4" width="50%"/>
-</p>
+<p><img src="./images/login.gif" width="50%"/><img src="./images/search.gif" width="50%"/></p>
+<p><img src="./images/amorestory.gif" width="50%"/><img src="./images/news.gif" width="50%"/></p>
+<p><img src="./images/cosmetic.gif" width="50%"/><img src="./images/favorite.gif" width="50%"/></p>
+<p><img src="./images/mypage.gif" width="50%"/><img src="./images/member.gif" width="50%"/></p>
 
 ### 💾 데이터베이스
 - RDB - MariaDB
