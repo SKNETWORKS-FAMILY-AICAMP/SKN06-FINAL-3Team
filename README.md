@@ -152,9 +152,18 @@ uvicorn main:app --reload
 
 ### 📱 UI
 <!-- <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20UXUI.png"/> -->
-<p><img src="/images/login.mp4" width="50%"/><img src="/images/mypage.mp4" width="50%"/></p>
-<p><img src="/images/amorestory.mp4" width="50%"/><img src="/images/news.mp4" width="50%"/></p>
-<p><img src="/images/cometic.mp4" width="50%"/><img src="/images/member.mp4" width="50%"/></p>
+<p>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/login.mp4" width="50%"/>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/mypage.mp4" width="50%"/>
+</p>
+<p>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/amorestory.mp4" width="50%"/>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/news.mp4" width="50%"/>
+</p>
+<p>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/cometic.mp4" width="50%"/>
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/member.mp4" width="50%"/>
+</p>
 
 ### 💾 데이터베이스
 - RDB - MariaDB
