@@ -1,8 +1,6 @@
-from sqlalchemy import create_engine, Column, Integer, String, Date, DateTime, TIMESTAMP
+from sqlalchemy import Integer, String, Date, TIMESTAMP
 from sqlalchemy.sql import func
 from sqlalchemy.orm import declarative_base, mapped_column
-from sqlalchemy import UniqueConstraint
-from datetime import date, datetime
 
 Base = declarative_base()
 

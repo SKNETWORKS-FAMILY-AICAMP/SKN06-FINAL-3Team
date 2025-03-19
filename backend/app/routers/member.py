@@ -108,7 +108,7 @@ def get_favorites(
             elif favorite_type =='EXTERNAL_JOURNAL':
                 sql +=  """
                 SELECT * FROM favorites
-                    JOIN post_external ON favorites.target_id = post_external._id
+                    JOIN post_external ON favorites.target_id = post_external.post_id
                     LEFT JOIN document ON post_external.document_id = document.document_id
                 WHERE favorites.scope='EXTERNAL' AND favorite_type = 'JOURNAL' 
                 """

@@ -135,7 +135,7 @@ def get_external_boards(
                         END AS is_favorite
                     FROM post_external
                     LEFT JOIN document ON post_external.document_id = document.document_id 
-                    LEFT JOIN (SELECT target_id FROM favorites WHERE scope = 'EXTERNAL' AND favorite_type = 'JOURNAL') f ON post_external.post_id = f.target_id 
+                    JOIN (SELECT target_id FROM favorites WHERE scope = 'EXTERNAL' AND favorite_type = 'JOURNAL') f ON post_external.post_id = f.target_id 
                     WHERE 1=1
                 """
             elif post_type == 'NEWS':
