@@ -15,18 +15,18 @@ AmoreSearch는 sLLM을 기반으로 아모레퍼시픽에서 사용할 수 있�
 ### 👥 개발자
 | 역할 | 이름 | GitHub | 담당 업무 |
 |------|------|--------|----------|
-| 팀원 | 박서윤 | [Se0y00n](https://github.com/Se0y00n) | |
-| 팀원 | 박유나 | [yunazz](https://github.com/yunazz) | |
-| 팀장 | 유경상 | [kyungsangYu](https://github.com/kyungsangYu) |  |
-| 팀원 | 장예린 | [yerin7797](https://github.com/yerin7797) |  |
+| 팀원 | 박서윤 | [Se0y00n](https://github.com/Se0y00n) | BE |
+| 팀원 | 박유나 | [yunazz](https://github.com/yunazz) |CI/CD, FE, BE,  DevOps|
+| 팀장 | 유경상 | [kyungsangYu](https://github.com/kyungsangYu) | BE |
+| 팀원 | 장예린 | [yerin7797](https://github.com/yerin7797) | BE |
 
 <br/>
 
-### 🛠️ 기술스텍 및 라이브러리
-- **프론트엔드**: `Nuxt.js` → NuxtImg, Vuetify, ...
-- **백엔드**: `FastAPI` → Langchain, Chromadb, PyMySQL, Pydantic, PyJWT, bcrypt ...
+### 🛠️ 기술스텍
+- **프론트엔드**: `Nuxt.js` → NuxtImg, Vuetify ···
+- **백엔드**: `FastAPI` → Langchain, Chromadb, PyMySQL, Pydantic, PyJWT ···
 - **데이터베이스**: `MariaDB`, `ChromaDB`
-- **LLM, Embedding 모델**: `RunPod`  → llm - 미정 / 임베딩 - multilingual-e5-large
+- **LLM, Embedding 모델**: `RunPod`  → llm - Qwen2.5-72B-Instruct / 임베딩 - multilingual-e5-large
 - **서버 인프라**: `AWS EC2`, `S3`
 
 <br/>
@@ -156,10 +156,37 @@ uvicorn main:app --reload
 <p><img src="./images/cosmetic.gif" width="50%"/><img src="./images/favorite.gif" width="50%"/></p>
 <p><img src="./images/mypage.gif" width="50%"/><img src="./images/member.gif" width="50%"/></p>
 
+<br/>
+
 ### 💾 데이터베이스
 - RDB - MariaDB
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/documents/%5BAmoreSearch%5D%20ERD.png"/>
-
 - Vector Store - ChromaDB
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-FINAL-3Team/blob/main/images/%5BAmoreSearch%5D%20vector_store_collections.png"/>
+- cloud - S3 
 
+<br/>
+
+### 🪛 파인튜닝
+- **Embedding 모델 성능 평가** 
+    - bge-m3
+    - multilingual-e5-large (✅)
+    - 방법:
+    <br/> 
+     benchmark dataset 1000개 생성(conetext - question) 후 question을 통해 각 {question별 context} - {retrieve한 context} 간의 hitrate 비교.
+- **HyQE**
+    문서별 가상의 질문을 생성 후, {HyQE질문} - {retrieve(query)} 간 cosine similarity를 통해 답변간 우선순위 rerank.
+    
+- **HyQE 질문을 위한 LLM 모델 학습**
+
+
+<br/>
+
+### 📢 AI 모델
+- 
+
+### 📢 Tool Calling
+https://python.langchain.com/docs/concepts/tool_calling/
+
+LangChain을 활용한 Tool Calling 으로 Agentic 하게 구현하고자 함
+- query에 따른 각 collection 선택 후 retrieve
+- Cosin Similarity를 통한 HyQE 질문을 활용한 답변 ReRank
+- ReRank를 통해 관련된 질문 4개 추출
