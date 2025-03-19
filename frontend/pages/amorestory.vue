@@ -132,6 +132,7 @@ watch(post_ctgry, (newValue) => {
                 :key="index"
                 scope="INTERNAL"
                 :item="item"
+                @notify="notify"
               />
             </template>
 

@@ -20,6 +20,7 @@ export default defineNuxtConfig({
       });
     },
     "@nuxt/image",
+    "@nuxtjs/mdc",
   ],
   vite: {
     vue: {

@@ -1,7 +1,6 @@
 <script setup>
 const props = defineProps({
   item: { required: true },
-  scope: { required: true },
   favorite_type: { type: String },
   is_favorite: {
     type: Boolean,
@@ -14,13 +13,22 @@ function openLink(url) {
   window.open(url);
 }
 
-function shareLink(item) {
-  console.log(item);
-}
+const copyToClipboard = async (text) => {
+  try {
+    await navigator.clipboard.writeText(text);
+    emit("notify", "링크가 복사되었습니다.");
+
+    setTimeout(() => {
+      copied.value = false;
+    }, 2000);
+  } catch (err) {
+    console.log(err);
+  }
+};
 </script>
 <template>
   <div class="search_card">
-    <v-card class="mx-auto" min-height="180">
+    <v-card class="mx-auto" min-height="120">
       <v-card-text class="pb-1">
         <div class="flex align-end justify-between">
           <div class="mb-2">
@@ -40,14 +48,9 @@ function shareLink(item) {
               icon="mdi-share-variant-outline"
               variant="text"
               color="primary"
-              @click="shareLink(item)"
-            />
-            <v-icon
-              class="icon--toggle ml-4"
-              :class="{ active: is_favorite }"
-              icon="mdi-star"
-              variant="text"
-              @click="toggleFavorites(item)"
+              @click="
+                copyToClipboard(item.original_file_url || item.source_url)
+              "
             />
           </div>
         </div>
@@ -130,15 +133,16 @@ function shareLink(item) {
 .search_card {
   position: relative;
   background: #ddd;
+  margin-bottom: 14px;
 }
 .search_card_title {
-  font-size: 0.9375rem;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 .text-medium-emphasis {
   line-height: 1.3;
-  font-size: 13px;
+  font-size: 12px;
 }
 </style>

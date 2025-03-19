@@ -7,8 +7,8 @@ const props = defineProps({
   },
 });
 
-const streaming = ref(false);
 const requesting = ref(false);
+const streaming = ref(false);
 const questions = computed(() => [
   `${[props.item?.brand_kor]}의 핵심 가치에 대해서 알려주세요.`,
   `${[props.item?.brand_kor]}의 주요 제품에 대해서 알려주세요`,
@@ -21,12 +21,13 @@ const search_result = ref("");
 let controller = new AbortController();
 
 async function search(query) {
-  if (requesting.value) return;
+  if (streaming.value) return;
 
   initSearch();
   search_query.value = query;
-  requesting.value = true;
   streaming.value = true;
+  requesting.value = true;
+
   controller = new AbortController();
   const response = await fetch(
     `http://localhost:8000/api/search/brand?brand_kor=${props.item?.brand_kor}&query=${search_query.value}`,
@@ -37,8 +38,8 @@ async function search(query) {
 
   if (!response.body) {
     console.error("스트리밍 응답을 받을 수 없습니다.");
-    streaming.value = false;
     requesting.value = false;
+    streaming.value = false;
     return;
   }
 
@@ -48,11 +49,11 @@ async function search(query) {
   while (true) {
     const { done, value } = await reader.read();
     if (done) {
-      streaming.value = false;
       requesting.value = false;
+      streaming.value = false;
       break;
     }
-    if (streaming.value) streaming.value = false;
+    if (requesting.value) requesting.value = false;
     search_result.value += decoder.decode(value, { stream: true });
   }
 }
@@ -61,8 +62,8 @@ function initSearch() {
   search_input.value = "";
   search_query.value = "";
   search_result.value = "";
-  streaming.value = false;
   requesting.value = false;
+  streaming.value = false;
 }
 
 function onDialogChange(val) {
@@ -149,7 +150,7 @@ watch(
                 <li v-for="(item, index) in questions" :key="index">
                   <span
                     @click="search(item)"
-                    :class="{ 'text-underline': !requesting }"
+                    :class="{ 'text-underline': !streaming }"
                   >
                     {{ item }}
                   </span>
@@ -164,7 +165,7 @@ watch(
                 <div class="search_q">{{ search_query }}</div>
                 <div class="search_a" v-html="search_result"></div>
               </template>
-              <template v-if="streaming">
+              <template v-if="requesting">
                 <div>
                   <v-progress-linear
                     style="width: 95%"
@@ -194,7 +195,7 @@ watch(
                 v-model="search_input"
                 @keydown.enter="search(search_input)"
                 placeholder=""
-                :disabled="requesting"
+                :disabled="streaming"
                 style="outline: none"
               />
             </div>
