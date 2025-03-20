@@ -9,7 +9,7 @@ from passlib.hash import pbkdf2_sha256
 from dotenv import load_dotenv
 load_dotenv()
 
-SECRET_KEY = os.getenv("SECRET_KEY", "default_secret_key")
+SECRET_KEY = os.getenv("SECRET_KEY",)
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES",10080))
 ALGORITHM ="HS256"
 
