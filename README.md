@@ -181,7 +181,17 @@ uvicorn main:app --reload
 <br/>
 
 ### 📢 AI 모델
+- llama-3.2-1b 모델 선택
+  ![image](https://github.com/user-attachments/assets/b412a24a-4c9f-453c-821a-8b2b8e0e756d)
+
+      => 프롬프트를 벗어나는 결과 출력 
+
+- huggingface 500개 + ai hub 500개 => 1000개 데이터셋을 활용해 llama-3.2-1b 튜닝
 - 
+  ![image](https://github.com/user-attachments/assets/61623225-fe3e-48ec-a807-2a5d350dc76a)
+
+
+
 
 ### 📢 Tool Calling
 https://python.langchain.com/docs/concepts/tool_calling/
